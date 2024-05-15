@@ -13,18 +13,23 @@
     background-color: var(--white);
     font-family: 'Inter', sans-serif;
     overflow-x: hidden;
+    height: 100vh;
   }
   h1{
     font-size: 53px;
     line-height: 53px;
     font-weight: 300 !important;
     color: var(--black);
+    letter-spacing:-3px;
+    padding-right: 35px;
+    margin-bottom: 15px;
   }
   p{
     font-size: 18px;
     font-weight: 300;
     line-height: 18px;
     color: var(--black);
+    margin-bottom: 0px;
   }
   .main_sect .container-fluid{
     padding: 0;
