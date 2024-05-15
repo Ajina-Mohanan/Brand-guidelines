@@ -1,1 +1,31 @@
 /* You can add global styles to this file, and also import other style files */
+@import "~bootstrap/dist/css/bootstrap.css";
+:root {
+    --black: #000;
+    --white: #ffff;
+  }
+  
+  * {
+    box-sizing: border-box;
+  }
+  
+  body {
+    background-color: var(--white);
+    font-family: 'Inter', sans-serif;
+    overflow-x: hidden;
+  }
+  h1{
+    font-size: 53px;
+    line-height: 53px;
+    font-weight: 300 !important;
+    color: var(--black);
+  }
+  p{
+    font-size: 18px;
+    font-weight: 300;
+    line-height: 18px;
+    color: var(--black);
+  }
+  .main_sect .container-fluid{
+    padding: 0;
+  }
