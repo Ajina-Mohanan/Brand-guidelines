@@ -1,11 +1,9 @@
 
 .right_blk{
     background-color: var(--black);
-    /* padding: 20px; */
 }
 .left_blk{
     background-color: var(--white);
-    /* padding: 20px 30px; */
     padding-right: 0px;
     height: 100vh;
     overflow-y: auto;
@@ -56,10 +54,7 @@
   .checkbox-group > * {
     margin: 0.2rem 0.2rem;
     position: relative;
-  }
-  
- 
-  
+  }  
   .checkbox-input {
     height: 1px;
     overflow: hidden;
@@ -86,7 +81,6 @@
   }
   .checkbox-input:focus + .checkbox-tile {
     border-color: var(--black);
-    /* box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1), 0 0 0 4px #b5c9fc; */
   }
   .checkbox-input:focus + .checkbox-tile:before {
     transform: scale(1);
@@ -103,30 +97,10 @@
     padding: 0 10px;
     border: 1px solid var(--black);
     background-color: var(--white);
-    /* box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1); */
     transition: 0.15s ease;
     cursor: pointer;
     position: relative;
   }
-  /* .checkbox-tile:before {
-    content: "";
-    position: absolute;
-    display: block;
-    width: 1.25rem;
-    height: 1.25rem;
-    border: 1px solid var(--black);
-    background-color: #fff;
-    border-radius: 50%;
-    top: 0.25rem;
-    left: 0.25rem;
-    opacity: 0;
-    transform: scale(0);
-    transition: 0.25s ease;
-    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='192' height='192' fill='%23FFFFFF' viewBox='0 0 256 256'%3E%3Crect width='256' height='256' fill='none'%3E%3C/rect%3E%3Cpolyline points='216 72.005 104 184 48 128.005' fill='none' stroke='%23FFFFFF' stroke-linecap='round' stroke-linejoin='round' stroke-width='32'%3E%3C/polyline%3E%3C/svg%3E");
-    background-size: 12px;
-    background-repeat: no-repeat;
-    background-position: 50% 50%;
-  } */
   .checkbox-tile:hover {
     border-color: var(--black);
     background-color: var(--black);
@@ -138,8 +112,6 @@
     transform: scale(1);
     opacity: 1;
   }
-
-  
   .checkbox-label {
     color: var(--black);
     transition: 0.375s ease;
