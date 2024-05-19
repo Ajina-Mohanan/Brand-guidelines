@@ -144,7 +144,14 @@
     border-radius: 13px;
     color: #000;
     padding: 0 8px;
+    width:200px;
     
+  }
+  [type=text]:focus{
+    outline: none;
+  }
+  [type=text]::placeholder{
+    color: #000;
   }
 .main_content_blk{
     padding: 0px 30px;
