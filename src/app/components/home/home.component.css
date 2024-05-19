@@ -4,11 +4,9 @@
     padding: 0px;
     height: 100vh;
     overflow-y: auto;
-    /* padding: 20px; */
 }
 .left_blk{
     background-color: var(--white);
-    /* padding: 20px 30px; */
     padding-right: 0px;
     height: 100vh;
     overflow-y: auto;
@@ -47,6 +45,81 @@
     padding: 20px 30px;
     border-bottom: 1px solid;
 }
+
+.checkbox-group {
+    display: flex;
+    flex-wrap: wrap;
+    width: 55%;
+    margin-bottom: 20px;
+    justify-content: flex-start;
+  
+  }
+  .checkbox-group > * {
+    margin: 0.2rem 0.2rem;
+    position: relative;
+  }  
+  .checkbox-input {
+    height: 1px;
+    overflow: hidden;
+    position: absolute;
+    white-space: nowrap;
+    width: 1px;
+  }
+  .checkbox-input:checked + .checkbox-tile {
+    border-color: var(--black);
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+    color: var(--black);
+  }
+  .checkbox-input:checked + .checkbox-tile:before {
+    transform: scale(1);
+    opacity: 1;
+    background-color: var(--black);
+    border-color: var(--black);
+  }
+  .checkbox-input:checked + .checkbox-tile .checkbox-icon, .checkbox-input:checked + .checkbox-tile .checkbox-label {
+    color: var(--white);
+  }
+  .checkbox-input:checked + .checkbox-tile{
+    background-color: var(--black);
+  }
+  .checkbox-input:focus + .checkbox-tile {
+    border-color: var(--black);
+  }
+  .checkbox-input:focus + .checkbox-tile:before {
+    transform: scale(1);
+    opacity: 1;
+  }
+  
+  .checkbox-tile {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: fit-content;
+    border-radius: 13px;
+    padding: 0 10px;
+    border: 1px solid var(--black);
+    background-color: var(--white);
+    transition: 0.15s ease;
+    cursor: pointer;
+    position: relative;
+  }
+  .checkbox-tile:hover {
+    border-color: var(--black);
+    background-color: var(--black);
+  }
+  .checkbox-tile:hover   .checkbox-label{
+    color: var(--white);
+  }
+  .checkbox-tile:hover:before {
+    transform: scale(1);
+    opacity: 1;
+  }
+  .checkbox-label {
+    color: var(--black);
+    transition: 0.375s ease;
+    text-align: center;
+  }
 .main_content_blk{
     padding: 0px 30px;
 }
